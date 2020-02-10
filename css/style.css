@@ -145,7 +145,7 @@ p{
 .exercise.part9 img{
     height: 400px;
     width: 400px;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 /* Es 6 */
@@ -165,7 +165,6 @@ p{
 /* Es 8 */
 .exercise.part8 img{
     transition: 3s;
-    border: 2px solid black;
 }
 
 .exercise.part8 img:hover{
@@ -184,17 +183,38 @@ p{
     height: 200px;
     width: 200px;
 }
+
 /* Es 10 */
 i.fas{
-    height: 50px;
-    width: 50px;
+    font-size: 50px;
 }
-/* Es 11 */
-/* Es 1 */
+
+i.fas{
+    animation: gira 1s linear infinite;
+}
+
+@keyframes gira {
+    0% {
+        transform: rotate(1turn);
+    }
+}
+
+/* Es 11
+i.fab{
+    animation: gira 1s linear;
+}
+
+@keyframes gira {
+    0% {
+        transform: rotate(0);
+    }
+    90% {
+        transform: rotate(315deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+} */
+
+/* Es 12 */
 /* Es 13 */
-a.button{
-    height: 30px;
-    width: 30px;
-    background-color: black;
-    border: 2px solid black;
-}
