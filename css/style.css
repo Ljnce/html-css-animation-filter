@@ -21,25 +21,11 @@ header{
     opacity: 0.9;
 }
 
-/* .html-css{
-    width: 200px;
-    height: 200px;
-    animation-name: head;
-    animation-duration: 5s;
-    position: absolute;
-    border: 1px solid red;
-} */
-
 .html-css img{
     width: 200px;
     height: 200px;
     object-fit: contain;
 }
-
-/* @@keyframes head {
-    from {left: 0px;}
-  to {right: 200px;}
-} */
 
 /* Main */
 main{
@@ -177,23 +163,38 @@ p{
 }
 
 /* Es 8 */
-.exercise.part6 img{
-    filter: grayscale(1);
+.exercise.part8 img{
+    transition: 3s;
+    border: 2px solid black;
 }
 
-.exercise.part6 img:hover{
-    filter:grayscale(0)
+.exercise.part8 img:hover{
+    filter:grayscale(50%) sepia(50%);
+    border-radius: 25px;
 }
 
 /* Es 9 */
-.exercise.part6 img{
-    filter: grayscale(1);
+.exercise.part9 img{
+    transition: 2s;
 }
 
-.exercise.part6 img:hover{
-    filter:grayscale(0)
+.exercise.part9 img:hover{
+    filter:grayscale(50%) sepia(50%);
+    border-radius: 25px;
+    height: 200px;
+    width: 200px;
 }
+/* Es 10 */
+i.fas{
+    height: 50px;
+    width: 50px;
+}
+/* Es 11 */
 /* Es 1 */
-/* Es 1 */
-/* Es 1 */
-/* Es 1 */
+/* Es 13 */
+a.button{
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    border: 2px solid black;
+}
