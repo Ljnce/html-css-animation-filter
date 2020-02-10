@@ -1,0 +1,199 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.flex-container{
+    width: 100vw;
+    height: 100vh;
+    background-color: #ededed;
+}
+
+/* Header */
+header{
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    opacity: 0.9;
+}
+
+/* .html-css{
+    width: 200px;
+    height: 200px;
+    animation-name: head;
+    animation-duration: 5s;
+    position: absolute;
+    border: 1px solid red;
+} */
+
+.html-css img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+/* @@keyframes head {
+    from {left: 0px;}
+  to {right: 200px;}
+} */
+
+/* Main */
+main{
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow-x: auto;
+}
+
+/* Container exercise */
+.exercise{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        /* (da esercizio andava solo justify-content: flex-start ) */
+    width: 90%;
+    height: 200px;
+    background-color: white;
+    margin-top: 30px;
+}
+
+/* Personalizzazione per tutti */
+h2,
+.quadrato,
+p{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+/* Quadrato da es 1 a es 4 */
+.quadrato{
+    height: 90px;
+    width: 90px;
+}
+
+/* Es 1 */
+.quadrato.uno{
+    border: 1px solid red;
+    transition: background 5s;
+}
+
+.quadrato.uno:hover{
+    background-color: red;
+}
+
+/* Es 2 */
+.quadrato.due{
+    background-color: yellow;
+    border: 1px solid black;
+    transition: 5s;
+}
+
+.quadrato.due:active{
+    width: 100%;
+}
+
+/* Es 3 */
+.quadrato.tre{
+    background-color: blue;
+    transition: 3s;
+}
+
+.quadrato.tre:hover{
+    border-radius: 50px;
+}
+
+/* Es 4 */
+.quadrato.quattro{
+    background-color: green;
+    transition: 4s;
+}
+
+.quadrato.quattro:hover{
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/* Es 5 */
+.quadrato.cinque{
+    background-color: orange;
+    height: 50px;
+    width: 50px;
+    transition: 2s;
+}
+
+.quadrato.cinque:hover{
+    width: 100px;
+    height: 100px;
+}
+
+.quadrato.cinque:active{
+    width: 20px;
+    height: 20px;
+}
+
+/* (Variante es 5 che però va a sovrapporsi ai testi)
+.quadrato.cinque:hover{
+    transform: scale(2);
+}
+
+.quadrato.cinque:active{
+    transform: scale(-2);
+} */
+
+/* Da es 6 a es 9 */
+.exercise.part6,
+.exercise.part7,
+.exercise.part8,
+.exercise.part9{
+    height: 500px;
+}
+
+.exercise.part6 img,
+.exercise.part7 img,
+.exercise.part8 img,
+.exercise.part9 img{
+    height: 400px;
+    width: 400px;
+    object-fit: contain;
+}
+
+/* Es 6 */
+.exercise.part6 img:hover{
+    filter:grayscale(1)
+}
+
+/* Es 7 */
+.exercise.part7 img{
+    transition: 3s;
+}
+
+.exercise.part7 img:hover{
+    filter:grayscale(50%) sepia(50%);
+}
+
+/* Es 8 */
+.exercise.part6 img{
+    filter: grayscale(1);
+}
+
+.exercise.part6 img:hover{
+    filter:grayscale(0)
+}
+
+/* Es 9 */
+.exercise.part6 img{
+    filter: grayscale(1);
+}
+
+.exercise.part6 img:hover{
+    filter:grayscale(0)
+}
+/* Es 1 */
+/* Es 1 */
+/* Es 1 */
+/* Es 1 */
