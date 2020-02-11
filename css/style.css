@@ -13,23 +13,70 @@
 
 /* Header */
 header{
-    height: 20%;
+    height: 30%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    opacity: 0.9;
+    flex-direction: column;
+    background-color: grey;
+    opacity: 0.8;
+    border: 1px solid black;
+    border-style: solid hidden solid hidden;
 }
 
-.html-css img{
-    width: 200px;
-    height: 200px;
+img.super-mario,
+img.luigi{
+    width: 120px;
+    height: 120px;
     object-fit: contain;
+    position: absolute;
+    animation-name: mario;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mario {
+    from{left: 0px;}
+    to {left: 100%}
+}
+
+img.finish-line-mario,
+img.finish-line-yoshi{
+    width: 105px;
+    transform: rotate(270deg);
+}
+
+img.finish-line-mario{
+    float: right;
+}
+
+img.finish-line-yoshi{
+    float: left;
+}
+
+.line{
+    width: 100%;
+    height: 50%;
+    border: 5px solid white;
+    border-style: hidden hidden dashed hidden;
+}
+
+img.yoshi-kart{
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    position: absolute;
+    animation-name: yoshi;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes yoshi {
+    from{right: 0px;}
+    to {right: 100%}
 }
 
 /* Main */
 main{
-    height: 80%;
+    height: 70%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -47,6 +94,12 @@ main{
     height: 200px;
     background-color: white;
     margin-top: 30px;
+    border: 2px solid grey;
+    transition: 3s;
+}
+
+.exercise:hover{
+    border-color: red;
 }
 
 /* Personalizzazione per tutti */
@@ -57,6 +110,15 @@ p{
     margin-top: 10px;
 }
 
+h2{
+    transition: 3s;
+}
+
+.exercise:hover > h2{
+    color:red;
+    font-weight: bolder;
+}
+
 /* Quadrato da es 1 a es 4 */
 .quadrato{
     height: 90px;
@@ -65,12 +127,12 @@ p{
 
 /* Es 1 */
 .quadrato.uno{
-    border: 1px solid red;
+    border: 1px solid pink;
     transition: background 5s;
 }
 
 .quadrato.uno:hover{
-    background-color: red;
+    background-color: pink;
 }
 
 /* Es 2 */
@@ -145,7 +207,7 @@ p{
 .exercise.part9 img{
     height: 400px;
     width: 400px;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 /* Es 6 */
@@ -165,6 +227,8 @@ p{
 /* Es 8 */
 .exercise.part8 img{
     transition: 3s;
+    object-fit: cover;
+    /* (per fare in modo che si veda l'effetto del border radius) */
 }
 
 .exercise.part8 img:hover{
@@ -189,8 +253,8 @@ i.fas{
     font-size: 50px;
 }
 
-i.fas{
-    animation: gira 1s linear infinite;
+.part10 i.fas{
+    animation: gira 3s linear infinite;
 }
 
 @keyframes gira {
@@ -199,12 +263,12 @@ i.fas{
     }
 }
 
-/* Es 11
-i.fab{
-    animation: gira 1s linear;
+/* Es 11 */
+.part11 i.fas{
+    animation: rigira 3s linear infinite;
 }
 
-@keyframes gira {
+@keyframes rigira {
     0% {
         transform: rotate(0);
     }
@@ -214,7 +278,23 @@ i.fab{
     100% {
         transform: rotate(0);
     }
-} */
+}
 
 /* Es 12 */
+
 /* Es 13 */
+.part13{
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer{
+    height: 20%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: green;
+    opacity: 0.9;
+    border: 2px solid #004d00;
+    border-style: solid hidden solid hidden;
+}
